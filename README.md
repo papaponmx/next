@@ -1,8 +1,6 @@
 # TODO
 
 * Front page
-* Add button on .what_we_do & .what_is
-
 * Font pairing
 * Add colors
 * Add Google Analytics code

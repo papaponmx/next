@@ -1,4 +1,4 @@
-$icon-font-path: '../fonts/';
+@import "variables";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -11,8 +11,5 @@ $icon-font-path: '../fonts/';
 }
 // The browser upgrade fallback
 
-// Components
-// |-> For the front-page.php
-
-@import "variables";
+@import "navigation";
 @import "frontpage";

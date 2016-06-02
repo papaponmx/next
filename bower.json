@@ -2,8 +2,7 @@
   "name": "nextrobotix-com",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5",
-    "foundation-sites": "^6.2.3"
+    "bootstrap-sass": "~3.3.5"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -17,6 +16,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.5.3",
-    "bootstrap-sass": "^3.3.6"
+    "bootstrap-sass": "^3.3.6",
+    "jquery": "^2.2.4"
   }
 }

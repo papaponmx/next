@@ -1,0 +1,88 @@
+.page__div
+{
+  display: flex;
+  //  width: 100%;
+  flex-direction: column;
+  min-height: $min-height;
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+// HERO
+
+.hero {
+
+//  min-height: 90vh;
+  background: darken(papayawhip, 5%);
+  div {
+    background: tomato;
+  }
+
+  }
+//
+// CARDS
+
+.cards {
+
+  @include display(flex);
+  @include flex-wrap(wrap);
+  align-items: center;
+  @include justify-content(space-between);
+
+  .card {
+    @include flex-basis(20em);
+    @include flex-grow(1);
+    margin: 0 1em;
+    text-align: center;
+  }
+
+  .card-image {
+    height: 15em;
+    //width: 15em;
+    background: darken(whitesmoke, 10%);
+    //border-radius: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+}
+
+// SERVICES
+.services {
+ // min-height: $min-height;
+  padding: 35vh 0;
+  text-align: center;
+  background: antiquewhite;
+}
+
+// NUMBERS
+
+.numbers {
+  .card-header{
+    font-size: 3em;
+  }
+  .card-copy, .card-header {
+    text-align: center;
+  }
+}
+// BUTTON WITH ICON
+
+.button-icon {
+  margin-top: 2em;
+  $icon-size: 1.6em;
+  background-color: whitesmoke;
+  padding: 1em;
+  min-width: 3em;
+
+  i {
+    @include size($icon-size);
+    display: inline-block;
+    margin-right: 1em;
+    vertical-align: middle;
+  }
+}

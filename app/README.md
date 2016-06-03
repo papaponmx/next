@@ -23,4 +23,12 @@
 3. 
 
 
-## 1. 
+## 1. Dependencies
+
+The front end depencies for this site are
+
+* Bourbon
+* Neat
+* Refills
+* jQuery
+* Foundation icon fonts

@@ -10,11 +10,11 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+    <link rel="icon" href="fonts/foundation-icons/foundation-icons.woff">
+    <link rel="stylesheet" href="fonts/foundation-icons/foundation-icons.css">
+      <!-- endbuild -->
 
-    <!-- build:css styles/main.css -->
+      <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     
@@ -24,50 +24,46 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header class="navigation" role="banner">
+    <header class="navigation">
         <div class="navigation-wrapper">
-            <a href="javascript:void(0)" class="logo">
-                <img src="https://raw.githubusercontent.com/thoughtbot/refills/49db8c0f2f8066c2c3a275781503fe3303a1a9fc/source/images/placeholder.png" alt="Logo Image">
-            </a>
-            <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
-            <nav role="navigation">
+  <!--          <a href="javascript:void(0)" class="logo">
+                <img src="https://raw.githubusercontent.com/thoughtbot/empties/master/source/images/placeholder.png" alt="Logo Image">
+            </a>-->
+            <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">Menu</a>
+            <nav>
                 <ul id="js-navigation-menu" class="navigation-menu show">
-                    <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
-                    <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
-                    <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
-                    <li id="js-navigation-more" class="nav-link more"><a href="javascript:void(0)">More</a>
+                    <li class="nav-link"><a href="javascript:void(0)"><i class="fi-home"></i> </a></li>
+                    <li class="nav-link"><a href="javascript:void(0)"><i class="fi-photo"></i> Galería</a></li>
+                    <li class="nav-link hover-menu">
+
+                        <a href="javascript:void(0)"><i class="fi-lightbulb"></i>  Soluciones</a>
                         <ul class="submenu">
-                            <li><a href="javascript:void(0)">Submenu Item</a></li>
-                            <li><a href="javascript:void(0)">Another Item</a></li>
-                            <li class="more"><a href="javascript:void(0)">Item with submenu</a>
-                                <ul class="submenu">
-                                    <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
-                                    <li><a href="javascript:void(0)">Another Item</a></li>
-                                </ul>
+                            <li class="hover-menu">
+                                <a href="javascript:void(0)" class="hover-menu-item"><i class="fi-eye"></i> Publicidad Aumentada</a>
                             </li>
-                            <li class="more"><a href="javascript:void(0)">Another submenu</a>
-                                <ul class="submenu">
-                                    <li><a href="javascript:void(0)">Sub-submenu</a></li>
-                                    <li><a href="javascript:void(0)">An Item</a></li>
-                                </ul>
+                            <li class="hover-menu">
+                                <a href="javascript:void(0)" class="hover-menu-item"><i class="fi-widget"></i> Automatización</a>
+                            </li>
+                            <li class="hover-menu">
+                                <a href="javascript:void(0)" class="hover-menu-item"><i class="fi-mobile"></i>  Robótica de consumo</a>
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-link"><a href="javascript:void(0)"><span id="question_mark">&#63;</span>
+                         Preguntas Frecuentes</a></li>
+                    <li class="nav-link"><a href="javascript:void(0)"><i class="fi-torsos"></i> Nosotros</a></li>
+                    <li class="nav-link"><a href="javascript:void(0)"><i class="fi-mail"></i> Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-
-
-
-
-
-
-
-
-
-
+    <div class="hero page__div">
+        <img id="logo--nx" src="/images/nx_logo.png" alt="El logo de Next Robotix" />
+        <p class="lead">Una frase que te cautivar&#225;
+        </p>
+        <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+    </div>
 
 
 
@@ -84,10 +80,7 @@
     </script>
   -->
     <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    
+    <script src="scripts/jquery-2.2.4.min.js"></script>
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->

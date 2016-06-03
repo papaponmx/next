@@ -1,6 +1,7 @@
 // 1 - Load project variables.
 // 2 - Load bourbon files.
-// 3 - Load custom app sass files.
+// 3 - Load neat files.
+// 4 - Load custom app sass files.
 
 
 
@@ -18,7 +19,13 @@
   padding: 0.2em 0;
 }
 // The browser upgrade fallback
+
+//bourbon
 @import "../../bower_components/bourbon/app/assets";
+
+// Neat
+@import "../../bower_components/neat/app/assets/stylesheets";
+
 
 // Load custom app sass files.
 @import "navigation";

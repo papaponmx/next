@@ -1,12 +1,12 @@
 {
   "name": "nextrobotix-com",
   "private": true,
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.5.3",
     "jquery": "^2.2.4",
-    "bourbon": "^4.2.7"
+    "bourbon": "^4.2.7",
+    "neat": "^1.7.4"
   }
 }

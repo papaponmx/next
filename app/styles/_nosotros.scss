@@ -1,0 +1,103 @@
+.side-image {
+  $base-line-height: 1.5em !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $large-screen: 53.75em !default;
+  $base-font-color: $dark-gray !default;
+  $side-image-background-top: white;
+  $side-image-background-bottom: $dark-gray;
+  $side-image-content-background: #F9F9F9;
+  $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, 0.8), 30%);
+
+  background: $side-image-content-background;
+
+  @include media($large-screen) {
+    @include row(table);
+  }
+
+  .images-wrapper {
+    background: /*url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"),*/
+    linear-gradient($side-image-background-top, $side-image-background-bottom),
+    no-repeat $side-image-background-top scroll;
+    background-color: $side-image-background-top;
+    background-size: cover;
+    border-bottom: $side-image-border;
+    display: block;
+    padding: 3em;
+
+    @include media($large-screen) {
+      @include span-columns(4);
+      background-position: bottom;
+      background-size: cover;
+      border-right: $side-image-border;
+    }
+  }
+
+  .side-image-content {
+    @include span-columns(12);
+    padding: 1em 1em 4em 1em;
+
+    @include media($large-screen) {
+      @include span-columns(8);
+      padding: 4em 4em 8em 4em;
+    }
+
+    h1 {
+      margin-bottom: 0.9em;
+    }
+
+    p, ul li {
+      color: $base-font-color;
+      line-height: $base-line-height;
+      //margin-bottom: 3em;
+      max-width: em(600);
+      font-size: em(18);
+    }
+  }
+
+  @include reset-display();
+}
+.side-image {
+  .images-wrapper, .side-image-content, blockquote {
+    min-height: 35vh;
+  }
+}
+
+blockquote {
+  display: block;
+  background: $transparent;
+  padding: 15px 20px 15px 45px;
+ // margin: 0 0 20px;
+  position: relative;
+
+  /*Font*/
+  font-family: $georgia;
+  font-size: 1.5em;
+  line-height: 1.2;
+  color: #666;
+  text-align: left;
+
+  cite {
+    font-size: .5em;
+  }
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
